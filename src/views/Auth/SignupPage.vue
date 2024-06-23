@@ -30,6 +30,12 @@ const handleSignup = () => {
     <div class="signup-box">
       <h2>Create Your Account</h2>
       <h1>Sign Up</h1>
+      <label for="role">Role</label>
+      <div class="role-options">
+        <label> <input type="radio" value="vendor" v-model="role" /> Vendor </label>
+        <label> <input type="radio" value="admin" v-model="role" /> Admin </label>
+      </div>
+
       <label for="username">Username</label>
       <input type="text" id="username" v-model="username" placeholder="Enter Username" required />
 
@@ -76,12 +82,6 @@ const handleSignup = () => {
         minlength="8"
         required
       />
-
-      <label for="role">Role</label>
-      <div class="role-options">
-        <label> <input type="radio" value="vendor" v-model="role" /> Vendor </label>
-        <label> <input type="radio" value="admin" v-model="role" /> Admin </label>
-      </div>
 
       <div class="card flex justify-content-center">
         <Button label="Signup" @click="handleSignup" />

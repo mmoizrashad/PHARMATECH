@@ -114,7 +114,7 @@ const handleSubmit = async () => {
 }
 
 .p-inputtext {
-  width: 49%;
+  width: 100%;
   height: 50px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -130,12 +130,14 @@ const handleSubmit = async () => {
 
 .p-password {
   height: 50px;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
   background: #f4f8ff;
   margin-top: 5px;
 }
+
 .card {
   text-align: center;
 }

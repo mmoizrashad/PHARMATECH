@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
       <form @submit="handleSubmit">
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" v-model="email" required />
+          <input type="email" id="email" v-model="email" />
         </div>
         <h3>AND</h3>
         <div class="form-group">
@@ -34,7 +34,6 @@ const handleSubmit = (e) => {
             id="phone"
             v-model="phone"
             placeholder="+92| Enter phone number here"
-            required
           />
         </div>
         <div class="form-group sign-in-button">
